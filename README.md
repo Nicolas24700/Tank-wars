@@ -19,7 +19,7 @@ Bienvenue dans le projet **Tank-Wars** réalisé dans le cadre d'un exercice de 
   - Modification et suppression accessibles via le back-office
   - Si l'image du tank est invalide (ex. : mauvais format), la création est annulée.
 
-- **Fonctionnalités techniques** : 
+- ⚙️ **Fonctionnalités techniques** : 
   - Vérification en PHP pour éviter les erreurs, comme la sélection d’un seul tank ou deux fois le même.
   - Stockage des id des tanks en combat dans des variables de session
   - Réinitialisation automatique des points de vie en quittant la partie.
