@@ -1,0 +1,185 @@
+/* ==================== Page d'Accueil ================================================= */
+.vs button {
+    padding: 15px 30px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.vs button:hover {
+    transform: scale(1.1);
+    background-color: #f39c12;
+}
+
+.battle-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.autrelabel {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.selecthome {
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tank-stats {
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+
+}
+.tank-stats p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* ========== Animation ============== */
+.tank-img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.tank-img.animate {
+    visibility: visible;
+    opacity: 1;
+    animation: droite 0.5s forwards;
+}
+
+.tank-img.animate-right {
+    visibility: visible;
+    opacity: 1;
+    animation: droite 0.5s forwards;
+}
+
+@keyframes droite {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* ========== POP PUP ============== */
+.btn-open-popup {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 80px;
+    height: 80px;
+    background-image: url('./uploads/img_site/iconeParam.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.btn-open-popup:hover {
+    transform: scale(1.1);
+}
+
+/* =========== */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+/* Style de la popup */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Style des inputs et labels */
+.form-popup label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.form-popup input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style du bouton d'envoi */
+.form-popup input[type="submit"] {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-popup input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+/* Bouton de fermeture */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: red;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.close-popup:hover {
+    transform: scale(1.1);
+}
