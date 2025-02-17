@@ -98,6 +98,7 @@
         <?php
         echo "<div class='win' id='winMessage'>
         <h1> $message </h1>
+        <p>Redirection vers la page d'accueil...</p>
         </div>";
         ?>
     </section>

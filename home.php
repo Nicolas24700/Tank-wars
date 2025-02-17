@@ -79,10 +79,10 @@
             <input type='text' name='nom' id='nom' required>
 
             <label for='atk'>Attaque :</label>
-            <input type='number' name='atk' id='atk' required>
+            <input type='number' name='atk' id='atk' required max="100" min="1" >
 
             <label for='pv'>Santé :</label>
-            <input type='number' name='pv' id='pv' required>
+            <input type='number' name='pv' id='pv' required max="100" min="1">
 
             <label for="photo">image du Tank :</label>
             <input type="file" name="photo" id="photo" required>
