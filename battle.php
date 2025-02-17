@@ -14,7 +14,7 @@
 
     $gameover = false;
     $message = '';
-    
+
     if ($tankjoueur->getPv() <= 0) {
         $gameover = true;
         $message = 'Vous avez perdu !';

@@ -187,6 +187,14 @@ h3 {
     top: 30%;
     text-transform: uppercase;
 }
+.win>p {
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    font-weight: bold;
+}
 /* =========================== Style Back-Office ================================================= */
 .section-backoffice {
     height: 100vh;
